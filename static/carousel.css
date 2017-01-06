@@ -35,10 +35,10 @@ body {
   width: auto;
 }
 
-.navbar-brand { color: #fff; cursor: default; }
+.navbar-brand { color: #fff; }
 .navbar-brand:focus { color: #fff; }
 .navbar-brand:hover { color: #fff; }
-.nav>li>a{ color: #fff; cursor: default; }
+.nav>li>a{ color: #fff; }
 .nav>li>a:hover { color: #fff; background: none; }
 .nav>li>a:focus { color: #fff; background: none; }
 
