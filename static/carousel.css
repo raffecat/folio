@@ -7,6 +7,9 @@ body {
   color: #5a5a5a;
 }
 
+.preload-img {
+  display: none;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -75,13 +78,13 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-.slide-1 { background: url(images/cross-the-bridge.jpg) no-repeat center top fixed; }
-.slide-2 { background: url(images/go-for-walk.jpg) no-repeat center top fixed; }
-.slide-3 { background: url(images/keep-perspective.jpg) no-repeat center top fixed; }
-.slide-4 { background: url(images/feed-the-cat.jpg) no-repeat center top fixed; }
-.slide-5 { background: url(images/go-out-in-the-rain.jpg) no-repeat center top fixed; }
-.slide-6 { background: url(images/enjoy-the-party.jpg) no-repeat center top fixed; }
-.slide-7 { background: url(images/seek-out-coffee.jpg) no-repeat center top fixed; }
+.slide-1 { background: url(images/seek-out-coffee.jpg) no-repeat center top fixed; }
+.slide-2 { background: url(images/cross-the-bridge.jpg) no-repeat center top fixed; }
+.slide-3 { background: url(images/go-for-walk.jpg) no-repeat center top fixed; }
+.slide-4 { background: url(images/keep-perspective.jpg) no-repeat center top fixed; }
+.slide-5 { background: url(images/feed-the-cat.jpg) no-repeat center top fixed; }
+.slide-6 { background: url(images/go-out-in-the-rain.jpg) no-repeat center top fixed; }
+.slide-7 { background: url(images/enjoy-the-party.jpg) no-repeat center top fixed; }
 .slide-8 { background: url(images/learn-from-books.jpg) no-repeat center top fixed; }
 .slide-9 { background: url(images/think-before-act.jpg) no-repeat center top fixed; }
 .slide-10 { background: url(images/adjust-accordingly.jpg) no-repeat center top fixed; }
