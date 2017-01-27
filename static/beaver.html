@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Andrew Towers' portfolio website and resume.">
+    <meta name="author" content="Andrew Towers">
+    <link rel="icon" href="favicon.ico">
+
+    <title>raffe.io - Beaver's Tail</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">raffe.io</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/beaver.html">Beaver's Tail</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <img class="img-responsive center-block" src="images/beaver.jpg" alt="Beaver's Tail">
+        </div>
+      </div>
+    </div -->
+
+    <div class="container">
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Angular, Nginx, Node.js, Postgres.</h2>
+          <p class="lead">This began as a contract job to create an online ordering page for school lunch orders.</p>
+          <p class="lead">I used Angular on the front-end, served by Nginx as a static single-page app, with REST APIs to submit the order and process payment.</p>
+          <p class="lead">Later, the site was re-designed by a 3rd-party designer. The new landing page uses jQuery.</p>
+          <p><a class="btn btn-default" href="http://www.beaverstail.com.au/" target="_blank" role="button">See it »</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="images/beaver.jpg" alt="Beaver's Tail">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Next school day, idempotence.</h2>
+          <p class="lead">School lunches are ordered for the next school day, and orders close early in the morning. To avoid mistakes, the booking day comes from the server at the time the order begins, along with a unique token for placing the order.</p>
+          <p class="lead">The site is designed for mobile and desktop. Because mobile networks (especially) have intermittent failures, the front-end automatically retries requests. This requires requests to be idempotent. If the place-order request reaches the server twice, the second request will resume the payment process.</p>
+          <!-- p><a class="btn btn-default" href="/indie.html" target="_blank" role="button">View details »</a></p -->
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/toolbox.jpg" alt="Toolbox">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Back-office stuff.</h2>
+          <p class="lead">The order is confirmed when PayPal instant-payment is completed back on the site. This process is also safe to resume or retry.</p>
+          <p class="lead">After lunch orders close for the day, the server generates a daily order summary (CSV) and emails it through to the office. It also generates lists for the kitchen and delivery slips for each school.</p>
+          <p class="lead">The back-office automation has saved staff lot of time, and helps to avoid costly mistakes!</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="images/pixlie.png" alt="Pixlie">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <p><a class="btn btn-default" href="http://pixel.raffe.io/" target="_blank" role="button">Back »</a></p>
+
+      <hr class="featurette-divider">
+
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017 Company, Inc.</p>
+      </footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
