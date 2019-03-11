@@ -31,7 +31,7 @@ body {
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
-    x-background-color: rgba(50,50,50,0.3);
+  x-background-color: rgba(50,50,50,0.3);
   text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
 }
 .navbar-wrapper .navbar .container {
@@ -51,8 +51,8 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 .carousel.slide {
   min-width: 0;
@@ -79,7 +79,6 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
   background-color: #fff;
 }
 .carousel-inner > .item > img {
@@ -87,10 +86,12 @@ body {
   top: 0;
   left: 0;
 }
+.carousel-caption, .carousel-control {
+  text-shadow: #000 1px 0 10px;
+}
 
 .slide {
   min-width: 100%;
-  height: 500px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -116,6 +117,21 @@ body {
 .slide-18 { background: url(images/stand-for-something.jpg) no-repeat center top fixed; }
 .slide-19 { background: url(images/success.jpg) no-repeat center top fixed; }
 
+.carousel, .carousel .item, .slide { height: 300px; }
+.slide { background-size: auto 300px }
+.carousel-caption h1 { font-size: 20px; }
+
+@media only screen and (min-width: 1024px) {
+  .carousel, .carousel .item, .slide { height: 400px; }
+  .slide { background-size: auto }
+  .carousel-caption h1 { font-size: 28px; }
+}
+@media only screen and (min-width: 1600px) {
+  .carousel, .carousel .item, .slide { height: 500px; }
+  .slide { background-size: auto }
+  .carousel-caption h1 { font-size: 32px; }
+}
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -127,6 +143,13 @@ body {
 }
 .marketing h2 {
   font-weight: normal;
+  margin-bottom: 0.2em;
+  position: relative; left: -2px;
+}
+.marketing h3 {
+  font-weight: normal;
+  margin-top: 0.2em;
+  margin-bottom: 0.8em;
 }
 .marketing .col-lg-4 p {
   margin-right: 10px;
